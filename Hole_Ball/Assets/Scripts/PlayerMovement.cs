@@ -4,28 +4,27 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public float speed = 5f;
+public bool isFlat= true;
+    private Rigidbody2D rigid;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        Vector3 tilt = Input.acceleration;
 
-        Vector2 pos = transform.position;
+        if(isFlat)
+            tilt= Quaternion.Euler(0,0,0)*tilt;
 
-        pos.x += h * speed * Time.deltaTime;
-        pos.y += v * speed * Time.deltaTime;
 
-        transform.position = pos;
+        rigid.AddForce(tilt);
+        Debug.DrawRay(transform.position + Vector3.up, tilt, Color.green);
 
     }
 
