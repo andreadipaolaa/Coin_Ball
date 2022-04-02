@@ -31,3 +31,37 @@ public bool isFlat= true;
 
 
 } // class
+
+/*
+public class PlayerMovement : MonoBehaviour
+{
+    public float moveForce = 10f;
+    private float movementX;
+    private float movementY;
+
+    private void Awake()
+    {
+
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        PlayerMoveKeyboard();
+
+    }
+
+    void PlayerMoveKeyboard()
+    {
+        movementX = Input.GetAxisRaw("Horizontal");
+        movementY = Input.GetAxisRaw("Vertical");
+        transform.position += new Vector3(movementX, movementY, 0f) * moveForce * Time.deltaTime;
+    }
+
+}*/
