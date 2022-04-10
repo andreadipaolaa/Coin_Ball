@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+/*public class PlayerMovement : MonoBehaviour
 {
 public bool isFlat= true;
     private Rigidbody2D rigid;
@@ -30,9 +30,9 @@ public bool isFlat= true;
 
 
 
-} // class
+} // class*/
 
-/*
+
 public class PlayerMovement : MonoBehaviour
 {
     public float moveForce = 10f;
@@ -64,4 +64,4 @@ public class PlayerMovement : MonoBehaviour
         transform.position += new Vector3(movementX, movementY, 0f) * moveForce * Time.deltaTime;
     }
 
-}*/
+}

@@ -5,7 +5,7 @@ using TMPro;
 
 public class CoinPicker : MonoBehaviour
 {
-    private float coinsCollected = 0;
+    private int coinsCollected = 0;
 
     public TextMeshProUGUI textCoins;
 
@@ -17,5 +17,19 @@ public class CoinPicker : MonoBehaviour
             textCoins.text = coinsCollected.ToString();
             Destroy(col.gameObject);
         }
+
+        if (col.transform.tag.Equals("Red"))
+        {
+            Destroy(this.gameObject);
+            FindObjectOfType<GameManager>().EndGame();
+        }
+
     }
+
+
+    public int getCoinsCollected()
+    {
+        return this.coinsCollected;
+    }
+
 }

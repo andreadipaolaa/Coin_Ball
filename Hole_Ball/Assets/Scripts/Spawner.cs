@@ -21,6 +21,8 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(waitSpawner());
+        StartCoroutine(waitDestroyer());
+
     }
 
     // Update is called once per frame
@@ -29,17 +31,26 @@ public class Spawner : MonoBehaviour
         spawnWait = Random.Range(spawnLeastWait, spawnMostWait);
     }
 
+    /* it spwans yellow coins and red coins*/
     IEnumerator waitSpawner()
     {
         yield return new WaitForSeconds(startWait);
 
         while (!stop)
         {
-            randCoin = Random.Range(0, 0);
+            randCoin = Random.Range(0, 2);
             Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), Random.Range(-spawnValues.y, spawnValues.y), 1);
             Instantiate(coins[randCoin], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
 
             yield return new WaitForSeconds(spawnWait);
         }
+    }
+
+
+    /* it destroys yellow coins and red coins after 10 seconds */
+    IEnumerator waitDestroyer()
+    {
+        yield return new WaitForSeconds(10);
+        Object.Destroy(this.gameObject);
     }
 }
