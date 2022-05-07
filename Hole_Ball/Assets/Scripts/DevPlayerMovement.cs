@@ -33,7 +33,7 @@ public bool isFlat= true;
 } // class*/
 
 
-public class PlayerMovement : MonoBehaviour
+public class DevPlayerMovement : MonoBehaviour
 {
     public float moveForce = 10f;
     private float movementX;
