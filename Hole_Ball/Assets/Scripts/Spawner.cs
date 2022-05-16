@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -15,13 +15,12 @@ public class Spawner : MonoBehaviour
     public int startWait;
     public bool stop;
 
-    private int randCoin;
+    private float time = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(waitSpawner());
-        StartCoroutine(waitDestroyer());
 
     }
 
@@ -38,19 +37,14 @@ public class Spawner : MonoBehaviour
 
         while (!stop)
         {
-            randCoin = Random.Range(0, 2);
+            GameObject randCoin = coins[Random.Range(0, 2)];
             Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), Random.Range(-spawnValues.y, spawnValues.y), 1);
-            Instantiate(coins[randCoin], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
+            Instantiate(randCoin, spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
+            
 
             yield return new WaitForSeconds(spawnWait);
         }
     }
 
-
-    /* it destroys yellow coins and red coins after 10 seconds */
-    IEnumerator waitDestroyer()
-    {
-        yield return new WaitForSeconds(10);
-        Object.Destroy(this.gameObject);
-    }
+    
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4033068705745339774}
   - component: {fileID: 4033068705745339746}
   - component: {fileID: 4033068705745339747}
+  - component: {fileID: 5456997781174950496}
   m_Layer: 6
   m_Name: YellowCoin
   m_TagString: Coin
@@ -121,3 +122,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 11.384999
+--- !u!114 &5456997781174950496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033068705745339775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f914d66c3144fd8a9d2482d9e8ff5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 13

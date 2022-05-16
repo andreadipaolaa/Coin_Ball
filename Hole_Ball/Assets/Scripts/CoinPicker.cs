@@ -21,7 +21,7 @@ public class CoinPicker : MonoBehaviour
         if (col.transform.tag.Equals("Red"))
         {
             Destroy(this.gameObject);
-            FindObjectOfType<GameManager>().EndGame();
+            FindObjectOfType<GameManager>().EndGame(score: coinsCollected);
         }
 
     }
