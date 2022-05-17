@@ -7,16 +7,19 @@ public class MainMenu : MonoBehaviour
 {
     public void StartButton()
     {
+        AudioManager.instance.Play("Click");
         SceneManager.LoadScene("SampleScene");
     }
 
     /*public void OptionsButton()
     {
+        AudioManager.instance.Play("Click");
         SceneManager.LoadScene("OptionsScene");
     }*/
 
     public void QuitButton()
     {
+        AudioManager.instance.Play("Click");
         Application.Quit();
     }
 

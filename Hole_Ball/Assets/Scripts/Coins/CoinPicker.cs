@@ -14,6 +14,7 @@ public class CoinPicker : MonoBehaviour
         if (col.transform.tag.Equals("Coin"))
         {
             coinsCollected++;
+            AudioManager.instance.Play("Coins");
             textCoins.text = coinsCollected.ToString();
             Destroy(col.gameObject);
         }
@@ -21,6 +22,7 @@ public class CoinPicker : MonoBehaviour
         if (col.transform.tag.Equals("Red"))
         {
             Destroy(this.gameObject);
+            AudioManager.instance.Play("GameOver");
             FindObjectOfType<GameManager>().EndGame(score: coinsCollected);
         }
 

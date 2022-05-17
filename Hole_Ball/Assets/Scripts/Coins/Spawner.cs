@@ -15,7 +15,6 @@ public class Spawner : MonoBehaviour
     public int startWait;
     public bool stop;
 
-    private float time = 0f;
 
     // Start is called before the first frame update
     void Start()

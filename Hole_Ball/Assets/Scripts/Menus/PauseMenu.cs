@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +18,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Pause()
     {
+        AudioManager.instance.Play("Click");
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0;
         isPaused = true;
@@ -28,6 +26,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        AudioManager.instance.Play("Click");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
@@ -35,11 +34,16 @@ public class PauseMenu : MonoBehaviour
 
     public void HomeButton()
     {
+        AudioManager.instance.Play("Click");
         SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1;
+        isPaused = false;
     }
 
     /*public void OptionsButton()
     {
+        AudioManager.instance.Play("Click");
         SceneManager.LoadScene("OptionsScene");
     }*/
+
 }
