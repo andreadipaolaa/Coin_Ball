@@ -11,11 +11,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    /*public void OptionsButton()
+    public void OptionsButton()
     {
         AudioManager.instance.Play("Click");
-        SceneManager.LoadScene("OptionsScene");
-    }*/
+        SceneManager.LoadScene("OptionsMenu");
+    }
 
     public void QuitButton()
     {

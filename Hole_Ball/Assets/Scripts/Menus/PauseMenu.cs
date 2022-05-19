@@ -40,10 +40,5 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    /*public void OptionsButton()
-    {
-        AudioManager.instance.Play("Click");
-        SceneManager.LoadScene("OptionsScene");
-    }*/
 
 }
