@@ -696,6 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: {fileID: 4289192685420854376, guid: 15f9085e96225465d85a5d3b98205638, type: 3}
+  highScore: {fileID: 337330801620697087, guid: 5dbddc211fc504c6b983a725bcf2c7c3, type: 3}
 --- !u!4 &1229719477
 Transform:
   m_ObjectHideFlags: 0
@@ -1486,7 +1487,7 @@ GameObject:
   - component: {fileID: 1894853646}
   - component: {fileID: 1894853645}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
