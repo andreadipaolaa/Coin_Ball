@@ -17,10 +17,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("OptionsMenu");
     }
 
-    public void QuitButton()
+    public void SignInButton()
     {
         AudioManager.instance.Play("Click");
-        Application.Quit();
+        SceneManager.LoadScene("Auth");
     }
 
 }
