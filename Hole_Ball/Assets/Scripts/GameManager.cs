@@ -18,7 +18,9 @@ public class GameManager : MonoBehaviour
 
     public void EndGame(int score)
     {
-        points.text = score.ToString() + " POINTS";
+        Debug.Log("entrato in end game");
+        Debug.Log(score);
+        points.text = score.ToString();
         if (PlayerPrefs.GetInt("Highscore", 0 ) < score)
         {
             PlayerPrefs.SetInt("Highscore", score);

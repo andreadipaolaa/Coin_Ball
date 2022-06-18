@@ -23,7 +23,7 @@ public class CoinPicker : MonoBehaviour
         {
             Destroy(this.gameObject);
             AudioManager.instance.Play("GameOver");
-            FindObjectOfType<GameManager>().EndGame(score: coinsCollected);
+            FindObjectOfType<GameManager>().EndGame(coinsCollected);
         }
 
     }

@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool isPaused = false;
+    private bool isPaused = false;
 
     public GameObject pauseMenuUI;
+
+    public GameObject pauseButton;
 
 
     public void PauseBottone()
@@ -20,6 +22,7 @@ public class PauseMenu : MonoBehaviour
     {
         AudioManager.instance.Play("Click");
         pauseMenuUI.SetActive(true);
+        pauseButton.SetActive(false);
         Time.timeScale = 0;
         isPaused = true;
     }
@@ -28,6 +31,7 @@ public class PauseMenu : MonoBehaviour
     {
         AudioManager.instance.Play("Click");
         pauseMenuUI.SetActive(false);
+        pauseButton.SetActive(true);
         Time.timeScale = 1;
         isPaused = false;
     }

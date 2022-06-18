@@ -10,8 +10,6 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private Vector3 spawnValues;
     public float spawnWait;
-    public float spawnMostWait;
-    public float spawnLeastWait;
     public int startWait;
     public bool stop;
 
@@ -23,11 +21,6 @@ public class Spawner : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        spawnWait = Random.Range(spawnLeastWait, spawnMostWait);
-    }
 
     /* it spwans yellow coins and red coins*/
     IEnumerator waitSpawner()
