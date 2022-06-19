@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseButton;
 
+    public GameObject joystick;
+
 
     public void PauseBottone()
     {
@@ -23,6 +25,7 @@ public class PauseMenu : MonoBehaviour
         AudioManager.instance.Play("Click");
         pauseMenuUI.SetActive(true);
         pauseButton.SetActive(false);
+        joystick.SetActive(false);
         Time.timeScale = 0;
         isPaused = true;
     }
@@ -32,6 +35,7 @@ public class PauseMenu : MonoBehaviour
         AudioManager.instance.Play("Click");
         pauseMenuUI.SetActive(false);
         pauseButton.SetActive(true);
+        joystick.SetActive(true);
         Time.timeScale = 1;
         isPaused = false;
     }

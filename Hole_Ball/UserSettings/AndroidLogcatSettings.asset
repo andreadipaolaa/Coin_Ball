@@ -1,5 +1,5 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "RF8MA014C7P",
     "m_SelectedPackage": {
         "deviceId": "",
         "name": "",
@@ -7,7 +7,32 @@
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 18792,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 5281,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 6597,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.sec.android.app.launcher",
+            "processId": 1976,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,9 +66,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },
