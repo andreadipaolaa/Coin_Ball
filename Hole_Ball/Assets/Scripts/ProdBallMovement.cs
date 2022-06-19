@@ -30,17 +30,33 @@ public class ProdBallMovement : MonoBehaviour{
 // }
 
     private Rigidbody2D rigid;
-    private Vector2 movement;
-    public float movementSpeed = 6f;
+    //private Vector2 movement;
+    public float movementSpeed = 1;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+   /*  void Update()
     {
          movement = new Vector2(Input.acceleration.x , Input.acceleration.y) * movementSpeed;
          rigid.AddForce(movement);
+
+    } */
+
+   private void Update()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            float movementX = touch.position.x;
+            float movementY = touch.position.y;
+            // Just so you know: Note that ScreenToWorldPoint takes a Vector3 where the 
+            // Z component is the distance in front of the camera
+            // currently you are passing in 0 so the object will move in the same plane
+            // as the camera
+            rigid.position = Vector3.MoveTowards(rigid.position, new Vector3(movementX,movementY,0f), movementSpeed * Time.deltaTime);
+        }
     }
 }

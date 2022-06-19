@@ -2227,6 +2227,10 @@ PrefabInstance:
       propertyPath: textCoins
       value: 
       objectReference: {fileID: 1894853645}
+    - target: {fileID: 5687021080074141126, guid: 3c72dbb8ef80a4263b439371e0f3a2e8, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5687021080074141129, guid: 3c72dbb8ef80a4263b439371e0f3a2e8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2291,7 +2295,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5687021081720894576, guid: 3c72dbb8ef80a4263b439371e0f3a2e8, type: 3}
+      propertyPath: movementSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5687021081720894576, guid: 3c72dbb8ef80a4263b439371e0f3a2e8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3c72dbb8ef80a4263b439371e0f3a2e8, type: 3}
 --- !u!1 &5687021081720894575 stripped
 GameObject:
@@ -2305,7 +2314,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5687021081720894575}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adbf2aca7db8d4425afe3a82aebee7f7, type: 3}
   m_Name: 
