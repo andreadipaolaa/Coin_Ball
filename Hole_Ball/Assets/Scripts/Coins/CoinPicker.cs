@@ -9,7 +9,7 @@ public class CoinPicker : MonoBehaviour
 
     public TextMeshProUGUI textCoins;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.transform.tag.Equals("Coin"))
         {

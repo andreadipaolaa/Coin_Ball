@@ -36,6 +36,7 @@ public bool isFlat= true;
 public class DevPlayerMovement : MonoBehaviour
 {
     public float moveForce = 10f;
+    //public Rigidbody2D ball;
     private float movementX;
     private float movementY;
 
@@ -57,11 +58,18 @@ public class DevPlayerMovement : MonoBehaviour
 
     }
 
+    /*private void FixedUpdate()
+    {
+        PlayerMoveKeyboard();
+    }*/
+
     void PlayerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
         transform.position += new Vector3(movementX, movementY, 0f) * moveForce * Time.deltaTime;
+        //ball.position = new Vector3(movementX, movementY, 0f);
+        //ball.MovePosition(ball.position * moveForce * Time.deltaTime);
     }
 
 }
