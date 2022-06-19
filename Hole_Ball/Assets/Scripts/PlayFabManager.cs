@@ -50,7 +50,7 @@ public class PlayFabManager : MonoBehaviour
         var request = new SendAccountRecoveryEmailRequest
         {
             Email = emailInput.text,
-            TitleId = "E82E3"
+            TitleId = "9FE78"
         };
         PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnError);
 
@@ -89,7 +89,7 @@ public class PlayFabManager : MonoBehaviour
 
     void OnError(PlayFabError error)
     {
-
+        messageText.text =  "Error while logging in/creating account!";
         Debug.Log("Error while logging in/creating account!");
         Debug.Log(error.GenerateErrorReport());
     }
