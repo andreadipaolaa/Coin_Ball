@@ -669,6 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f95c49f56fa43aeb2babc6550ffb90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  signInButton: {fileID: 0}
 --- !u!1 &683213942
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f95c49f56fa43aeb2babc6550ffb90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  signInButton: {fileID: 1525672759}
 --- !u!1 &1451548735
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +950,7 @@ GameObject:
   - component: {fileID: 1525672762}
   - component: {fileID: 1525672761}
   m_Layer: 5
-  m_Name: Quit Button
+  m_Name: Sign In Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

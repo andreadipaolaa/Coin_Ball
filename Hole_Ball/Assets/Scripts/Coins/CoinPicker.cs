@@ -26,6 +26,12 @@ public class CoinPicker : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame(coinsCollected);
         }
 
+        if (col.transform.tag.Equals("Wall"))
+        {
+            AudioManager.instance.Play("Wall");
+            Debug.Log("collision happened");
+        }
+
     }
 
 

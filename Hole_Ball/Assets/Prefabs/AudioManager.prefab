@@ -66,3 +66,10 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Wall
+    clip: {fileID: 8300000, guid: b551de8c97131466d976dfd993db9c3e, type: 3}
+    mixer: {fileID: 24300002, guid: 287ad52bd222b4d9186f96edd00e758e, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
