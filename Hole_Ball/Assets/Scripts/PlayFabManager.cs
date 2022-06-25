@@ -61,6 +61,15 @@ public class PlayFabManager : MonoBehaviour
     }
 
 
+    public void returnButton()
+    {
+        AudioManager.instance.Play("Click");
+        MainMenu.isLogged = false;
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
+
 
     // Start is called before the first frame update
     void Start()

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 447950946042067891}
   - component: {fileID: 447950946042067888}
   - component: {fileID: 2712291506803375340}
+  - component: {fileID: 3759961258221573571}
   m_Layer: 6
   m_Name: RedCoin
   m_TagString: Red
@@ -135,3 +136,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 15
+--- !u!114 &3759961258221573571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447950946042067889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590b92aaa7b8343518b5451f993c33b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accelerationTime: 2
+  maxSpeed: 3.5

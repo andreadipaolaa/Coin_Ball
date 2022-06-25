@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "RF8MA014C7P",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "RF8MA014C7P",
+        "name": "com.AndreSimo.CoinBall.Coin_Ball",
+        "processId": 27968,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -30,6 +30,30 @@
             "deviceId": "RF8MA014C7P",
             "name": "com.sec.android.app.launcher",
             "processId": 1976,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 13148,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 25838,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 27212,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8MA014C7P",
+            "name": "com.AndreSimo.CoinBall.Coin_Ball",
+            "processId": 27968,
             "exited": false
         }
     ],

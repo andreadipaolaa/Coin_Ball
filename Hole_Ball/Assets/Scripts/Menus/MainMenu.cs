@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject signInButton;
 
-    private static bool isLogged = false;
+    public static bool isLogged = false;
 
     private void Start()
     {
